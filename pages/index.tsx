@@ -16,7 +16,7 @@ export default function Home() {
       </Head>
       <main className={styles.main}>
         <h1>Hello world!</h1>
-        <h2>stay classy</h2>
+        <h2>stay classy, san francisco</h2>
         <div className={styles.description}>
           <p>
             Get started by editing&nbsp;
