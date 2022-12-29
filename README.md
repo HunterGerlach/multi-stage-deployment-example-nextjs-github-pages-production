@@ -1,3 +1,23 @@
+# Multi-Stage Deployment Example with Next.JS and Github Pages
+
+This repository contains an example of deploying a Next.JS application to multiple stages or environments using GitHub Pages and GitHub Actions. It consists of two repositories:
+
+## multi-stage-deployment-example-nextjs-github-pages-staging
+
+This repository contains the code for the Next.JS application that is deployed to the staging environment via GitHub Pages. It includes a configuration file that specifies the URL of the staging environment and any other necessary details.
+
+To deploy the application to the staging environment, you can push your code changes to the `main` branch of this repository. The application will be automatically deployed to the staging environment by GitHub Pages.
+
+## multi-stage-deployment-example-nextjs-github-pages-production
+
+This repository contains the code and configuration for the GitHub Actions workflow that deploys the Next.JS application to the production environment. It includes a configuration file that specifies the URL of the production environment and any other necessary details.
+
+To deploy the application to the production environment, you can create a new release of the application in the staging repo and tag it with the desired version number. The GitHub Actions workflow will automatically deploy the application to the production environment.
+
+To use this example in your own project, you can fork these repositories and customize them to fit your specific needs.
+
+---
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
