@@ -7,6 +7,15 @@
   min-height: 100vh;
 }
 
+.header {
+  overflow: hidden;
+}
+
+.header img {
+  margin-left: 50%;
+  transform: translateX(-50%);
+}
+
 .description {
   display: inherit;
   justify-content: inherit;

@@ -14,108 +14,52 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="./favicon.ico" />
       </Head>
-      <main className={styles.main}>
-        <h1>Hello world!</h1>
-        <h2>stay classy</h2>
-        <div className={styles.description}>
-          <p>
-            Get started by editing&nbsp;
-            <code className={styles.code}>pages/index.tsx</code>
-          </p>
-          <div>
-            <a
-              href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              By{' '}
-              <Image
-                src="./vercel.svg"
-                alt="Vercel Logo"
-                className={styles.vercelLogo}
-                width={100}
-                height={24}
-                priority
-              />
-            </a>
-          </div>
-        </div>
-
-        <div className={styles.center}>
+      <div>
+        <a href="https://github.com/HunterGerlach/multi-stage-deployment-example-nextjs-github-pages-staging">
           <Image
-            className={styles.logo}
-            src="./next.svg"
-            alt="Next.js Logo"
-            width={180}
-            height={37}
-            priority
+            decoding="async"
+            loading="lazy"
+            width="149"
+            height="149"
+            src="./forkme_left_green_007200.png"
+            className="attachment-full size-full"
+            alt="Fork me on GitHub"
+            data-recalc-dims="1"
           />
-          <div className={styles.thirteen}>
-            <Image
-              src="./thirteen.svg"
-              alt="13"
-              width={40}
-              height={31}
-              priority
-            />
-          </div>
-        </div>
-
+        </a>
+      </div>
+      <div className={styles.header}>
+        <Image
+          priority
+          src="./james-orr-38CyKJ1hkQc-unsplash.jpg"
+          alt="Multiple legos of the same type"
+          width="640"
+          height="420"
+        />
+      </div>
+      <main className={styles.main}>
+        <h1>Multi-Stage Deployment Example with Next.JS and Github Pages</h1>
+        <p>This repository contains an example of deploying a Next.JS application to multiple stages or environments using GitHub Pages and GitHub Actions. It consists of two repositories:</p>
+        <h2>## multi-stage-deployment-example-nextjs-github-pages-staging</h2>
+        <p>This repository contains the code for the Next.JS application that is deployed to the staging environment via GitHub Pages. It includes a configuration file that specifies the URL of the staging environment and any other necessary details.</p>
+        <p>To deploy the application to the staging environment, you can push your code changes to the `main` branch of this repository. The application will be automatically deployed to the staging environment by GitHub Pages.</p>
+        <h2>## multi-stage-deployment-example-nextjs-github-pages-production</h2>
+        <p>This repository contains the code and configuration for the GitHub Actions workflow that deploys the Next.JS application to the production environment. It includes a configuration file that specifies the URL of the production environment and any other necessary details.</p>
+        <p>To deploy the application to the production environment, you can create a new release of the application in the staging repo and tag it with the desired version number. The GitHub Actions workflow will automatically deploy the application to the production environment.</p>
+        <p>To use this example in your own project, you can fork these repositories and customize them to fit your specific needs.
+        </p>
         <div className={styles.grid}>
           <a
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
+            href="https://www.huntergerlach.com"
             className={styles.card}
             target="_blank"
             rel="noopener noreferrer"
           >
             <h2 className={inter.className}>
-              Docs <span>-&gt;</span>
+              HunterGerlach.com <span>-&gt;</span>
             </h2>
             <p className={inter.className}>
-              Find in-depth information about Next.js features and&nbsp;API.
-            </p>
-          </a>
-
-          <a
-            href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            className={styles.card}
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <h2 className={inter.className}>
-              Learn <span>-&gt;</span>
-            </h2>
-            <p className={inter.className}>
-              Learn about Next.js in an interactive course with&nbsp;quizzes!
-            </p>
-          </a>
-
-          <a
-            href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            className={styles.card}
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <h2 className={inter.className}>
-              Templates <span>-&gt;</span>
-            </h2>
-            <p className={inter.className}>
-              Discover and deploy boilerplate example Next.js&nbsp;projects.
-            </p>
-          </a>
-
-          <a
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            className={styles.card}
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <h2 className={inter.className}>
-              Deploy <span>-&gt;</span>
-            </h2>
-            <p className={inter.className}>
-              Instantly deploy your Next.js site to a shareable URL
-              with&nbsp;Vercel.
+              Learn more about this project and others at www.HunterGerlach.com.
             </p>
           </a>
         </div>
