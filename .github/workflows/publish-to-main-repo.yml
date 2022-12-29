@@ -1,18 +1,25 @@
 name: Publish to another (Prod) repository
 
+#on:
+#  pull_request:
+#    types:
+#      - closed
+#
+#jobs:
+#  if_merged:
+#    if: github.event.pull_request.merged == true
+#    runs-on: ubuntu-latest
+#    steps:
+#    - run: |
+#        echo The PR was merged
+#
+
 on:
-  pull_request:
-    types:
-      - closed
-
+  push:
+# Pattern matched against refs/tags
+    tags:        
+      - '**' # Push events to every tag including hierarchical tags like v1.0/beta
 jobs:
-  if_merged:
-    if: github.event.pull_request.merged == true
-    runs-on: ubuntu-latest
-    steps:
-    - run: |
-        echo The PR was merged
-
   build:
     runs-on: ubuntu-latest
     steps:
@@ -30,7 +37,7 @@ jobs:
         with:
           source-directory: 'output'
           destination-github-username: 'HunterGerlach'
-          destination-repository-name: 'nextjs-github-pages-multi-envs-prod'
+          destination-repository-name: 'multi-stage-deployment-example-nextjs-github-pages-production'
           user-email: hunter@huntergerlach.com
           target-branch: main
 
