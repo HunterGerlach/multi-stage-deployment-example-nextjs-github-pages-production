@@ -48,6 +48,7 @@ export default function Home() {
         <p>To deploy the application to the production environment, you can create a new release of the application in the staging repo and tag it with the desired version number. The GitHub Actions workflow will automatically deploy the application to the production environment.</p>
         <p>To use this example in your own project, you can fork these repositories and customize them to fit your specific needs.
         </p>
+        <p>Hello World</p>
         <div className={styles.grid}>
           <a
             href="https://www.huntergerlach.com"
